@@ -28,13 +28,12 @@ jobs:
       run: |
         sudo dpkg-reconfigure dash
         sudo apt update
-        sudo apt-get install libtool-bin cmake libproxy-dev uuid-dev liblzo2-dev autoconf automake bash bison \
+        sudo apt-get install libtool-bin cmake libproxy-dev uuid-dev liblzo2-dev autoconf automake-1.15 bash bison \
         bzip2 diffutils file flex m4 g++ gawk groff-base libncurses5-dev libtool libslang2 make patch perl pkg-config shtool \
         subversion tar texinfo zlib1g zlib1g-dev git gettext libexpat1-dev libssl-dev cvs gperf unzip \
         python libxml-parser-perl gcc-multilib gconf-editor libxml2-dev g++-multilib gitk libncurses5 mtd-utils \
         libncurses5-dev libvorbis-dev git autopoint autogen sed build-essential intltool libglib2.0-dev \
         xutils-dev lib32z1-dev xsltproc gtk-doc-tools
-        sudo apt install automake-1.15
        
     # Runs a set of commands using the runners shell
     - name: Update x86 package
@@ -56,7 +55,6 @@ jobs:
         sudo mkdir -p /media/asuswrt/
         sudo mkdir -p /opt/images/
                 
-    # Ubuntu 20.04 Directory
     - name: Link Directory
       run: |
         sudo ln -s $(pwd)/am-toolchains/brcm-arm-hnd /opt/toolchains
