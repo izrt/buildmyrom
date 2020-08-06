@@ -114,7 +114,7 @@ jobs:
         sudo cp /media/asuswrt/asuswrt-merlin.ng/release/src-rt-6.x.4708/.config /opt/images/cfe.config
         sudo cp /media/asuswrt/asuswrt-merlin.ng/release/src-rt/version.conf /opt/images/
         
-        #sha256sum /opt/images/* > /opt/images/checksum.txt
+        sha256sum /opt/images/* > /opt/images/checksum.txt
         
     - name: Create Release
       id: create_release
