@@ -26,7 +26,6 @@ jobs:
       # Runs a single command using the runners shell
     - name: Update && install packages
       run: |
-     # package for 20.04 
         sudo dpkg-reconfigure dash
         sudo apt update
         sudo apt-get install libtool-bin cmake libproxy-dev uuid-dev liblzo2-dev autoconf automake bash bison \
