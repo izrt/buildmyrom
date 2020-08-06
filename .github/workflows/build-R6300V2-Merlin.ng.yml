@@ -98,9 +98,9 @@ jobs:
         make rt-ac68u
         echo "build image done"     
         
-        cd /media/asuswrt/asuswrt-merlin.ng/release/src-rt-6.x.4708/cfe/
-        make
-        echo "build cfe done"
+        #cd /media/asuswrt/asuswrt-merlin.ng/release/src-rt-6.x.4708/cfe/
+        #make
+        #echo "build cfe done"
         
 #    - name : Upload packages
 #      uses: actions/upload-artifact@master
