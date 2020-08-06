@@ -111,7 +111,7 @@ jobs:
     - name: Move file && Checksum
       run: |
         sudo mv -f /media/asuswrt/asuswrt-merlin.ng/release/src-rt-6.x.4708/image/*.trx /opt/images/
-        sudo cp /media/asuswrt/asuswrt-merlin.ng/release/src-rt-6.x.4708/cfe/cfe*.bin /opt/images/
+        #sudo cp /media/asuswrt/asuswrt-merlin.ng/release/src-rt-6.x.4708/cfe/cfe*.bin /opt/images/
         sudo cp /media/asuswrt/asuswrt-merlin.ng/release/src-rt/version.conf /opt/images/
         
         sha256sum /opt/images/* > /opt/images/checksum.txt
